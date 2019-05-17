@@ -6,6 +6,8 @@ tempArray = [1, 2, 6, 9, 3, 21]
 
 # your ruby loop here
 
+made a change
+
 
 #### 2. From all the built in Ruby methods we've seen in class this week, choose three that you think are particularly helpful and create examples to show how they work.
 
