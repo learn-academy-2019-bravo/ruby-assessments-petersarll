@@ -110,6 +110,7 @@ class Example
 end
 
 
+
 example = Example.new("Friday")
 example.say_hi
 #

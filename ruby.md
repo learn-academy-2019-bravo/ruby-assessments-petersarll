@@ -32,16 +32,23 @@ RSpec is a testing tool for Ruby, created for behavior-driven development (BDD).
 What is RsSpec good for? it is very useful for testing the finer details and the business logic of your app. that means testing the internals like models and controllers of your app. Tests that cover your views or feature tests which stimulate more complete user flows, like purchasing an item, will not be the focus that RSpec is made for.
 
 #### 4. Name three possible non-inheritance relationships between ruby objects?
-
 //Your Answer
+1. a non-inheritance relationship might be a class that needs to have inheritance from multiple classes
+2. Parent/ child relationship. The child can reference the parents class. this method allows us to store info in the parent class without having to duplicate the information over again in the child classes
+3. inheritance relationship is a "is a" relationship while composition relationship is a "has a" relationship. inheritance is a trait that will be inherited while compositions "has" the ability to change.
 
 //Googled Answer
+Inheritance generally describes an is a kind of relationship between objects. In other words, through inheritance, one object is based off of another. This hierarchical implementation acts as an effective mechanism for code reuse.Composition provides an alternative to inheritance. It typically illustrates a has a relationship between objects.
+Composition aims at solving the pitfalls of inheritance through encapsualtion, de-coupling, and delegation. Instead of the tightly coupled objects sometimes created as a result inheritance, composition allows us to keep objects independent of each other, without fear of indirectly affecting dependent objects.
 
 
 #### 5. What do we call the #{} convention used below? What is it accomplishing?
 //#{} is string interpolation.  it allows you to inject variables straight into a string. string interpolation allows easier and more intuitive string formatting and content-specification compared with string concatenation.
 
-
+Using this syntax everything between the opening #{ and closing } bits is evaluated as Ruby code, and the result of this evaluation will be embedded into the string surrounding it.
+In other words, when Ruby finds #{name} in this string, then it will evaluate the piece of Ruby code name. It finds that this is a variable, so it returns the value of the variable, which is the string "Ada". So it embeds it into the surrounding string "Hello, #{name}!", by replacing #{name}.
+Now we can also finally explain the difference between strings created with single and double quotes:
+String interpolation only works with double quotes.
 
 
 ```ruby
@@ -55,7 +62,14 @@ I think testing can be very consuming and tedious if you aren't very sure in how
 
 
 //Googled Answer
+Pros:
+- Very fast (under a second)
+- Isolated (they correctly identify the failing code)
+- Improve design (they force you to move logic out of the controller)
 
+Cons:
+- Brittle (APIs can get out of sync)
+- Harder to maintain (you need to update the test more often)
 
 #### 7. What is an instance variable in Ruby? How is it different from a normal, local variable?
 
