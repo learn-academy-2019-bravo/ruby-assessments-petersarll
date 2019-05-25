@@ -1,6 +1,5 @@
 # Ruby Assessments
-
-#### 1. Use two different Ruby loops to loop over this array, multiplying each element by 2.
+# ### 1. Use two different Ruby loops to loop over this array, multiplying each element by 2.
 
 tempArray = [1, 2, 6, 9, 3, 21]
 
@@ -102,14 +101,14 @@ class Example
     def say_hi
         if @day == "Friday"
           p "TGIF!"
-      else if @day == "Monday"
+      elsif @day == "Monday"
        p "Its monday again"
      else
        p "another day"
-        end
-      end
     end
+  end
 end
+
 
 example = Example.new("Friday")
 example.say_hi
